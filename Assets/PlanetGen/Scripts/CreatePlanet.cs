@@ -12,12 +12,12 @@ public class CreatePlanet : MonoBehaviour {
 	private Vector3 nextPosition;
 
 	void Start () {
-
-		GameObject go = new GameObject("Planet");
-		go.transform.localPosition = startPosition;
-		go.transform.localScale = new Vector2(blockSize,blockSize);
-		SpriteRenderer renderer = go.AddComponent<SpriteRenderer>();
-		SphereTestScript pRotation = go.AddComponent<SphereTestScript>();
+		GameObject planet = GameObject.CreatePrimitive(PrimitiveType.Cube);
+		planet.transform.position = startPosition;
+		planet.transform.localScale = new Vector2(blockSize,blockSize);
+		Destroy(planet.GetComponent<MeshFilter>());
+		SpriteRenderer renderer = planet.AddComponent<SpriteRenderer>();
+		SphereTestScript pRotation = planet.AddComponent<SphereTestScript>();
 		pRotation.RotationSpeed = 5f;
 		renderer.sprite = sprites[0];
 	}

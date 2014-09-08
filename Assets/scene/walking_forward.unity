@@ -414,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetSize: 50
   startPosition: {x: 3, y: -3, z: 0}
-  blockSize: 3
+  blockSize: .300000012
   minY: -5
   maxY: 10
   sprites:
