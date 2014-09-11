@@ -4,41 +4,24 @@ using System.Collections;
 public class PlayerLogic : MonoBehaviour {
 
 	// Use this for initialization
+
+	public Animator anim;
 	void Start () {
-	
+		anim = gameObject.GetComponent<Animator> ();
+		Debug.Log("hello world");
 	}
 
-	private void Move (string direction) {
-		switch (direction)
-		{
-		case "North":
-			rigidbody2D.AddForce(new Vector2(0,0.32f));
 
-			break;
-		case "South":
-			break;
-		case "East":
-			break;
-		case "West":
-			break;
-		}
-
-	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown(KeyCode.UpArrow)) {
-			Move("North");
+		if (Input.GetKey(KeyCode.UpArrow)) {
+			rigidbody2D.AddForce(new Vector2(0,0.32f));
 		}
-		else if (Input.GetKeyDown(KeyCode.RightArrow)) {
-			Move("East");
-		}
-		else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-			Move("South");
-		}
-		else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-			Move("West");
+		else if (Input.GetKey(KeyCode.DownArrow)) {
+			rigidbody2D.AddForce(new Vector2(0,-0.32f));
+			anim.SetTrigger("TurnDown");
 		}
 	
 	}
