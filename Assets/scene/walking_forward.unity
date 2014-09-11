@@ -134,7 +134,7 @@ Camera:
   far clip plane: 10
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 3.79219341
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -294,3 +294,4 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
