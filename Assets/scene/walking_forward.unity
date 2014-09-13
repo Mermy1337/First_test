@@ -138,11 +138,12 @@ Animator:
   m_GameObject: {fileID: 130811805}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cf93bafacda55b247bc481f522e59a70, type: 2}
+  m_Controller: {fileID: 9100000, guid: c01111200868e4a43bba9671e753162e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &130811809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSpeed: 1
-  anim: {fileID: 130811808}
 --- !u!50 &130811810
 Rigidbody2D:
   m_ObjectHideFlags: 0
