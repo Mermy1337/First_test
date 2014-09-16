@@ -24,7 +24,9 @@ public class PlayerLogic : MonoBehaviour {
 
 		// just a simple movement. see http://docs.unity3d.com/ScriptReference/Input.GetAxis.html
 		transform.Translate(Input.GetAxis("Horizontal") * PlayerSpeed * Time.deltaTime,0,0);
-		transform.Translate(0,Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime,0);
+		//transform.Translate(0,Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime,0);
+
+		transform.Translate(0,0,Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime);
 
 
 		/* Player Direction for animating. must be improved!:
