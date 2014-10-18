@@ -59,7 +59,9 @@ public class PlayerLogic : MonoBehaviour {
 
 			transform.Translate(Input.GetAxis("Horizontal") * PlayerSpeed * Time.deltaTime,0,0);
 			//transform.Translate(0,Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime,0);
-			
+
+            
+
 			transform.Translate(0,0,Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime);
 
             if (touchingPlatform &&Input.GetKey("space"))
@@ -67,6 +69,23 @@ public class PlayerLogic : MonoBehaviour {
                 rigidbody.AddForce(Vector3.up * jumpHigh, ForceMode.Force);
 
 			}
+
+            if (Input.GetKey("q"))
+            {
+                transform.Rotate(0, 2, 0);
+            }
+            if (Input.GetKey("e"))
+            {
+                transform.Rotate(0, -2, 0);
+            }
+
+            //Reset Rotation and touching Platform
+            if(Input.GetKey("r"))
+            {
+                this.transform.rotation = new Quaternion(0, 0, 0,0);
+                touchingPlatform = true;
+            }
+        
 
             
 		
