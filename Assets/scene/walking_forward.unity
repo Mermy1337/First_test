@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generationStepDelay: .00999999978
+  passagePrefab: {fileID: 11400000, guid: b24af1803e71ac44fb33373ea1451d25, type: 2}
+  wallPrefab: {fileID: 11400000, guid: a6dd6a2c20a1393499f8a2c8d894dd8c, type: 2}
   cellPrefab: {fileID: 1247068913}
   size: {x: 20, y: 20}
 --- !u!4 &538427956

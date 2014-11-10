@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Maze
+  m_Name: Maze Passage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .197463036, y: .308906198, z: -.141622841}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -36,14 +36,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeb428efce231504aa98e0744c3285a0, type: 3}
+  m_Script: {fileID: 11500000, guid: bd1cadf4b14a8ea49bc6bbfd9e77a10e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generationStepDelay: .00999999978
-  passagePrefab: {fileID: 11400000, guid: b24af1803e71ac44fb33373ea1451d25, type: 2}
-  wallPrefab: {fileID: 11400000, guid: a6dd6a2c20a1393499f8a2c8d894dd8c, type: 2}
-  cellPrefab: {fileID: 11400000, guid: 7a4320da80b7fc541abac9932fe6ba1d, type: 2}
-  size: {x: 0, y: 0}
+  cell: {fileID: 0}
+  otherCell: {fileID: 0}
+  direction: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
