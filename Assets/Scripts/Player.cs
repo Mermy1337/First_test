@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerLogic : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	public float PlayerSpeed = 1;
 	public  int jumpHigh = 100;
@@ -73,6 +73,7 @@ public class PlayerLogic : MonoBehaviour {
             if (Input.GetKey("q"))
             {
                 transform.Rotate(0, 2, 0);
+                
             }
             if (Input.GetKey("e"))
             {
