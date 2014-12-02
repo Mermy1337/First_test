@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
 
-public class MazePassage : MazeCellEdge
+[Serializable]
+public class MazeRoomSettings
 {
     #region PublicVariables
-
-
+    public Material floorMaterial, wallMaterial;
     #endregion
 
     #region PrivateVariables
@@ -17,4 +17,5 @@ public class MazePassage : MazeCellEdge
 
     #region PrivateMethods
     #endregion
+    
 }

@@ -2,7 +2,9 @@
 using System.Collections;
 
 [System.Serializable]
-public struct IntVector2  {
+public struct IntVector2
+{
+    #region PublicVariables
 
     public int x, z;
 
@@ -11,6 +13,16 @@ public struct IntVector2  {
         this.x = x;
         this.z = z;
     }
+   
+    #endregion
+
+
+    #region PrivateVariables
+
+    #endregion
+
+    #region PublicMethods
+    
 
     public static IntVector2 operator +(IntVector2 a, IntVector2 b)
     {
@@ -18,6 +30,12 @@ public struct IntVector2  {
         a.z += b.z;
         return a;
     }
+    #endregion
+
+    #region PrivateMethods
+    #endregion
+
+
 
     
 }

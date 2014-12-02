@@ -10,7 +10,6 @@ public enum MazeDirection
 
 public static class MazeDirections
 {
-
     public const int Count = 4;
 
     public static MazeDirection RandomValue
@@ -55,6 +54,16 @@ public static class MazeDirections
     public static Quaternion ToRotation(this MazeDirection direction)
     {
         return rotations[(int)direction];
+    }
+
+    public static MazeDirection GetNextClockwise(this MazeDirection direction)
+    {
+        return (MazeDirection)(((int)direction + 1) % Count);
+    }
+
+    public static MazeDirection GetNextCounterclockwise(this MazeDirection direction)
+    {
+        return (MazeDirection)(((int)direction + Count - 1) % Count);
     }
 
 
